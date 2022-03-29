@@ -1,0 +1,19 @@
+'''
+    La sucesión de Fibonacci es la siguiente sucesión infinita de
+    números naturales:
+    {0,1,1,2,3,5,8,13,21,34,55,} ...
+    fn=fn-1+f_n-2, fibonacci    
+    La sucesión inicia con f0 y f1, y a partir de estos cada termino es la 
+    suma de los dos anteriores.
+'''
+
+
+def fib(n):
+    a, b = 0, 1
+    while a < n:
+        print(a, end=',')
+        a, b = b, a+b
+    print('')
+
+
+print(fib(4))
