@@ -27,8 +27,7 @@ class FormLogin(FormLoginDesigner):
         if(user == None):
             status = False
             messagebox.showerror(
-                message="El usuario no existe por favor registrese", title="Mensaje",parent=self)
-            messagebox.showinfo("title", "message",parent=self)   
+                message="El usuario no existe por favor registrese", title="Mensaje",parent=self.ventana)            
         return status
 
     def isPassword(self, password: str, user: Auth_User):
