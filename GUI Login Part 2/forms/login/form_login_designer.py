@@ -50,7 +50,8 @@ class FormLoginDesigner():
         etiqueta_usuario = tk.Label(frame_form_fill, text="Usuario", font=(
             'Times', 14), fg="#666a88", bg='#fcfcfc', anchor="w")
         etiqueta_usuario.pack(fill=tk.X, padx=20, pady=5)
-        self.usuario = ttk.Entry(frame_form_fill, font=('Times', 14))
+        self.usuario = ttk.Entry(frame_form_fill, font=('Times', 14), textvariable="hola")
+        self.usuario.insert(0, "This is the default text")
         self.usuario.pack(fill=tk.X, padx=20, pady=10)
 
         etiqueta_password = tk.Label(frame_form_fill, text="Contraseña", font=(
