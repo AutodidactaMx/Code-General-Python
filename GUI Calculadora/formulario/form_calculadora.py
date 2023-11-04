@@ -30,7 +30,7 @@ class FormularioCalculadora(tk.Tk):
 
         # Pantalla de operacion
         self.entry = tk.Entry(self, width=12, font=(
-            'Arial', 40), bd=0, fg=cons.COLOR_DE_TEXTO_DARK, bg=cons.COLOR_CAJA_TEXTO_DARK, justify='right')
+            'Arial', 40), bd=1, fg=cons.COLOR_DE_TEXTO_DARK, bg=cons.COLOR_CAJA_TEXTO_DARK, justify='right')
         self.entry.grid(row=1, column=0, columnspan=4,
                         padx=10, pady=10)  # Añadido padding
 
@@ -61,7 +61,7 @@ class FormularioCalculadora(tk.Tk):
 
             # Ajuste para que el botón de '=' abarque dos columnas en una fila
             if button == '=':
-                tk.Button(self, text=button, width=11, height=2, 
+                tk.Button(self, text=button, width=11, height=2, command=lambda b=button: self.on_button_click(b),
                           bg=color_fondo, fg=cons.COLOR_DE_TEXTO_DARK, relief=tk.FLAT, font=button_font, padx=5, pady=5, bd=0, borderwidth=0, highlightthickness=0,
                           overrelief='flat').grid(row=row_val, column=col_val, columnspan=2, pady=5)  # Añadido columnspan
                 col_val += 1
