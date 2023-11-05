@@ -134,8 +134,7 @@ class FormularioMaestroDesign(tk.Tk):
         self.limpiar_panel(self.cuerpo_principal)     
         FormularioSitioConstruccionDesign(self.cuerpo_principal,self.img_sitio_construccion) 
 
-    def abrir_panel_info(self):   
-        self.limpiar_panel(self.cuerpo_principal)     
+    def abrir_panel_info(self):           
         FormularioInfoDesign()                    
 
     def limpiar_panel(self,panel):
