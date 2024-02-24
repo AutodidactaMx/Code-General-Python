@@ -23,6 +23,8 @@ Este tutorial te introduce a una arquitectura básica de capas, donde separamos 
 
 Al separar la aplicación en estas tres capas, facilitamos la comprensión y mantenimiento del código, además de permitir una distribución más eficiente.
 
+ ![parte delantera](assets/img/python-tkinter-sqlite-crud_1.png)
+
 ## Instalación y Uso
 
 1. Clona este repositorio en tu máquina local.
@@ -42,3 +44,7 @@ Si deseas contribuir a este proyecto, por favor sigue estos pasos:
 ## Licencia
 
 Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
+
+## Autor
+
+Este proyecto fue creado por Jesús Gutiérrez López. Puedes contactar al autor en jesus.gutierrez@autodidactamx.com.
