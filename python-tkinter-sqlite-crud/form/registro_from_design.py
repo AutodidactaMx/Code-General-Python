@@ -3,7 +3,8 @@ from tkinter import ttk
 from tkinter import messagebox
 import util.util_ventana as util_ventana
 
-COLOR_FONDO = "#dee6f1"
+COLOR_FONDO = "#fff"
+COLOR_FONDO_BUSQUEDA = "#f7f8fa"
 
 
 class FormularioRegistroDesign(tk.Tk):
@@ -18,33 +19,33 @@ class FormularioRegistroDesign(tk.Tk):
         self.title('Python CRUD')
         w, h = 800, 500
         util_ventana.centrar_ventana(self, w, h)
-        self.configure(bg=COLOR_FONDO)
+        self.configure(bg=COLOR_FONDO_BUSQUEDA)
 
     def obtener_conf_btn_pack(self):
         return {"side": tk.RIGHT, "padx": 10, "pady": 10}
 
     def crear_paneles(self):
         self.marco_titulo = tk.Frame(
-            self, bg=COLOR_FONDO, height=50)
+            self, bg=COLOR_FONDO_BUSQUEDA, height=40)
         self.marco_titulo.pack(side=tk.TOP, fill='both')
 
         self.marco_registro = tk.Frame(
             self, bg=COLOR_FONDO, height=50)
-        self.marco_registro.pack(side=tk.TOP, fill='both')
+        self.marco_registro.pack(side=tk.TOP, fill='both' , pady=10)
 
         self.marco_acciones = tk.Frame(
             self, bg=COLOR_FONDO, height=50)
-        self.marco_acciones.pack(side=tk.TOP,  padx=20, fill='both')
+        self.marco_acciones.pack(side=tk.TOP,  fill='both')
 
         self.marco_productos = tk.Frame(
             self, bg=COLOR_FONDO)
         self.marco_productos.pack(
-            side=tk.TOP, fill='both', padx=20, pady=15, expand=True)
+            side=tk.TOP, fill='both', padx=30, pady=15, expand=True)
 
     def crear_controles(self):
 
         title = tk.Label(self.marco_titulo, text="REGISTRO DE PRODUCTO", font=(
-            'Roboto', 20), fg="#000000", bg=COLOR_FONDO, pady=20)
+            'Roboto', 20), fg="#485159", bg=COLOR_FONDO_BUSQUEDA, pady=20)
         title.pack(expand=True, fill=tk.BOTH)
 
         etiqueta_id = tk.Label(self.marco_registro, text="Id:", font=(
