@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 
 *.sqlite
+python-web-scraping-selenium/driver/chromedriver.exe
