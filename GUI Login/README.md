@@ -22,8 +22,10 @@ En este tutorial, nos enfocaremos en crear una interfaz gráfica para el inicio 
 ## Instalación y Uso
 
 1. Clona este repositorio en tu máquina local.
-2. Instala los requisitos con `pip install -r requirements.txt`.
-3. Ejecuta la aplicación con `python main.py`.
+2. Abrir la carpeta GUI LOGIN como se muestra en la imagen :
+![parte delantera](imagenes/Carpeta.png)
+4. Instala los requisitos con `pip install -r requirements.txt`.
+5. Ejecuta la aplicación con `python main.py`.
 
 ## Contribuir
 
