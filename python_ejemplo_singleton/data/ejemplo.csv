@@ -1,0 +1,21 @@
+﻿No.,Campo,Operati,XML
+0,ID_ comprobante,tabla PAGOS,
+1,Receptor Rfc (rfc),tabla PAGOS,fijo
+2,MontoTotalPagos,tabla PAGOS,
+3,FechaPago,tabla PAGOS,
+4,NumOperacion,tabla PAGOS,
+5,RfcEmisorCtaBen (rfc_banco_beneficiario),tabla PAGOS,fijo
+6,CtaBeneficiario (cuenta_beneficiario),tabla PAGOS,fijo
+7,CtaOrdenante (cuenta_ordenante),tabla PAGOS,
+8,RfcEmisorCtaOrd (rfc_banco_ordenante),tabla PAGOS,
+9,ClaveCliente,tabla PAGOS,fijo
+10,CFDI ,tabla PAGOS,
+11,Serie,tabla PAGOS,
+12,Folio,tabla PAGOS,
+13,MotoTotalXML,tabla PAGOS,
+14,AddendaDomicilioReceptor (direccion_fiscal),tabla PAGOS,fijo
+15,NumParcialidad,tabla PAGOS,
+16,SaldoInsoluto,tabla PAGOS,
+17,MontoPagado,tabla PAGOS,
+18,MesLiquidacion,tabla PAGOS,<Periodo> en XML
+19,ID CLIENTE,tabla PAGOS,
